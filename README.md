@@ -1,6 +1,6 @@
 # Portfolio
 
-This is an enhanced, polished portfolio starter built with Next.js (App Router), Tailwind CSS, Framer Motion and cmdk (command palette).
+This is an enhanced, polished portfolio built with Next.js (App Router), Tailwind CSS, Framer Motion and cmdk (command palette).
 
 ## Quick start
 1. Install dependencies: `npm install`
