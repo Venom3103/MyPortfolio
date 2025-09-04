@@ -1,6 +1,6 @@
 # Portfolio
 
-This is an polished portfolio built with Next.js, Tailwind CSS, Framer Motion and command palette.
+This is an polished portfolio built with Next.js, Tailwind CSS, Framer Motion and Command Palette.
 
 ## Quick start
 1. Install dependencies: `npm install`
