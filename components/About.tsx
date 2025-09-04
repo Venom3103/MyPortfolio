@@ -19,7 +19,7 @@ export default function About() {
   <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 mt-4 justify-items-center">
     <span className="badge">JavaScript</span>
     <span className="badge">TypeScript</span>
-    <span className="badge">React</span>
+    <span className="badge">React.js</span>
     <span className="badge">Next.js</span>
     <span className="badge">Node.js</span>
     <span className="badge">Express.js</span>

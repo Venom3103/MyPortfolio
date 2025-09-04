@@ -14,6 +14,12 @@ const projects = [
     url: '#',
     tech: ['Next.js', 'OpenAI', 'TypeScript']
   },
+    {
+    title: 'Kuber AI Gold',
+    desc: 'AI-powered gold investment planning and advisory platform',
+    url: 'https://kuber-ai-gold.vercel.app',
+    tech: ['Next.js', 'TypeScript', 'OpenAI API', 'Tailwind CSS']
+  },
   {
     title: 'EventHub',
     desc: 'Event management dashboard with notifications',
