@@ -1,7 +1,12 @@
 'use client'
 
-import { motion } from 'framer-motion'
 import Image from 'next/image'
+import { motion, type HTMLMotionProps } from 'framer-motion'
+
+// Typed motion wrappers to avoid TS "className does not exist" errors
+const MotionH1 = (props: HTMLMotionProps<'h1'>) => <motion.h1 {...props} />
+const MotionP = (props: HTMLMotionProps<'p'>) => <motion.p {...props} />
+const MotionDiv = (props: HTMLMotionProps<'div'>) => <motion.div {...props} />
 
 export default function Hero() {
   return (
@@ -12,7 +17,7 @@ export default function Hero() {
       <div className="md:flex md:items-center md:justify-between gap-12">
         {/* Left content */}
         <div className="max-w-2xl space-y-4 text-center md:text-left">
-          <motion.h1
+          <MotionH1
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.6 }}
@@ -21,19 +26,21 @@ export default function Hero() {
             Hi, I’m <span className="text-primary">Ayush</span>
             <br />
             <span className="text-slate-200">FullStack MERN Developer</span>
-          </motion.h1>
+          </MotionH1>
 
-          <motion.p
+          <MotionP
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.15 }}
             className="mt-3 text-lg text-slate-300 max-w-xl leading-relaxed"
           >
-            I design and build <span className="font-semibold text-white">clean, accessible interfaces</span> that delight users at every interaction.  
-            I’m passionate about crafting seamless experiences using <span className="text-primary font-medium">Next.js</span>, <span className="text-primary font-medium">React.js</span>, <span className="text-primary font-medium">TypeScript</span>, and <span className="text-primary font-medium">Excellence</span> that bring apps to life.
-          </motion.p>
+            I design and build <span className="font-semibold text-white">clean, accessible interfaces</span> that delight users at every interaction.{' '}
+            I’m passionate about crafting seamless experiences using <span className="text-primary font-medium">Next.js</span>,{' '}
+            <span className="text-primary font-medium">React.js</span>, <span className="text-primary font-medium">TypeScript</span>, and{' '}
+            <span className="text-primary font-medium">Excellence</span> that bring apps to life.
+          </MotionP>
 
-          <motion.div
+          <MotionDiv
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.3 }}
@@ -41,38 +48,40 @@ export default function Hero() {
           >
             <a
               href="#projects"
-              className="px-5 py-2 rounded-lg bg-gradient-to-r from-green-500 to-red-450 text-white font-medium hover:scale-105 transition-transform"
+              className="px-5 py-2 rounded-lg bg-gradient-to-r from-green-500 text-white font-medium hover:scale-105 transition-transform"
             >
               View Projects
             </a>
             <a
               href="#contact"
-              className="px-5 py-2 rounded-lg bg-gradient-to-r from-green-500 to-red-450 text-white font-medium hover:scale-105 transition-transform"
+              className="px-5 py-2 rounded-lg bg-gradient-to-r from-green-500 text-white font-medium hover:scale-105 transition-transform"
             >
               Contact Me
             </a>
-          </motion.div>
+          </MotionDiv>
         </div>
 
         {/* Right content container */}
         <div className="flex flex-col items-center md:items-end space-y-6 relative">
-          {/* Cartoon image */}
-          <motion.div
+          {/* Cartoon image (transparent PNG) */}
+          <MotionDiv
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.2 }}
-            className="relative w-[420px] h-[360px] pointer-events-none select-none"
+            className="relative w-[420px] h-[360px]"
           >
             <Image
-              src="/MyCartoon.png"
+              src="/MyCartoon.png"        // ensure this is a true transparent PNG in /public
               alt="Ayush Cartoon"
               fill
-              className="object-contain"
+              sizes="(min-width: 768px) 420px, 100vw"
+              className="object-contain pointer-events-none select-none"
               priority
             />
-          </motion.div>
+          </MotionDiv>
+
           {/* Right stats card */}
-          <motion.div
+          <MotionDiv
             initial={{ scale: 0.98, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{ delay: 0.25 }}
@@ -95,7 +104,7 @@ export default function Hero() {
                 <div className="text-xs text-slate-400">Stack</div>
               </div>
             </div>
-          </motion.div>
+          </MotionDiv>
         </div>
       </div>
     </section>
