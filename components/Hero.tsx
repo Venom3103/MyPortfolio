@@ -3,11 +3,6 @@
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 
-// Fix for Framer Motion + TS generic typing
-const MotionH1 = motion<HTMLHeadingElement>('h1')
-const MotionP = motion<HTMLParagraphElement>('p')
-const MotionDiv = motion<HTMLDivElement>('div')
-
 export default function Hero() {
   return (
     <section
@@ -17,7 +12,7 @@ export default function Hero() {
       <div className="md:flex md:items-center md:justify-between gap-12">
         {/* Left content */}
         <div className="max-w-2xl space-y-4 text-center md:text-left">
-          <MotionH1
+          <motion.h1
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.6 }}
@@ -26,9 +21,9 @@ export default function Hero() {
             Hi, I’m <span className="text-primary">Ayush</span>
             <br />
             <span className="text-slate-200">FullStack MERN Developer</span>
-          </MotionH1>
+          </motion.h1>
 
-          <MotionP
+          <motion.p
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.15 }}
@@ -45,9 +40,9 @@ export default function Hero() {
             <span className="text-primary font-medium">TypeScript</span>, and{' '}
             <span className="text-primary font-medium">Excellence</span> that
             bring apps to life.
-          </MotionP>
+          </motion.p>
 
-          <MotionDiv
+          <motion.div
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.3 }}
@@ -65,13 +60,13 @@ export default function Hero() {
             >
               Contact Me
             </a>
-          </MotionDiv>
+          </motion.div>
         </div>
 
         {/* Right content container */}
         <div className="flex flex-col items-center md:items-end space-y-6 relative">
           {/* Cartoon image */}
-          <MotionDiv
+          <motion.div
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.2 }}
@@ -84,10 +79,10 @@ export default function Hero() {
               className="object-contain"
               priority
             />
-          </MotionDiv>
+          </motion.div>
 
           {/* Right stats card */}
-          <MotionDiv
+          <motion.div
             initial={{ scale: 0.98, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{ delay: 0.25 }}
@@ -110,7 +105,7 @@ export default function Hero() {
                 <div className="text-xs text-slate-400">Stack</div>
               </div>
             </div>
-          </MotionDiv>
+          </motion.div>
         </div>
       </div>
     </section>
