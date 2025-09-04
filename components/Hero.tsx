@@ -46,13 +46,13 @@ export default function Hero() {
           >
             <a
               href="#projects"
-              className="px-5 py-2 rounded-lg bg-gradient-to-r from-green-500 text-white font-medium hover:scale-105 transition-transform"
+              className="px-5 py-2 rounded-lg bg-gradient-to-r from-green-500  text-white font-medium hover:scale-105 transition-transform"
             >
               View Projects
             </a>
             <a
               href="#contact"
-              className="px-5 py-2 rounded-lg bg-gradient-to-r from-green-500 text-white font-medium hover:scale-105 transition-transform"
+              className="px-5 py-2 rounded-lg bg-gradient-to-r from-green-500  text-white font-medium hover:scale-105 transition-transform"
             >
               Contact Me
             </a>
