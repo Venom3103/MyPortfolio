@@ -30,16 +30,12 @@ export default function Hero() {
             className="mt-3 text-lg text-slate-300 max-w-xl leading-relaxed"
           >
             I design and build{' '}
-            <span className="font-semibold text-white">
-              clean, accessible interfaces
-            </span>{' '}
-            that delight users at every interaction. I’m passionate about
-            crafting seamless experiences using{' '}
-            <span className="text-primary font-medium">Next.js</span>,{' '}
+            <span className="font-semibold text-white">clean, accessible interfaces</span>{' '}
+            that delight users at every interaction. I’m passionate about crafting seamless experiences
+            using <span className="text-primary font-medium">Next.js</span>,{' '}
             <span className="text-primary font-medium">React.js</span>,{' '}
             <span className="text-primary font-medium">TypeScript</span>, and{' '}
-            <span className="text-primary font-medium">Excellence</span> that
-            bring apps to life.
+            <span className="text-primary font-medium">Excellence</span> that bring apps to life.
           </motion.p>
 
           <motion.div
@@ -50,13 +46,13 @@ export default function Hero() {
           >
             <a
               href="#projects"
-              className="px-5 py-2 rounded-lg bg-gradient-to-r from-green-500 to-red-450 text-white font-medium hover:scale-105 transition-transform"
+              className="px-5 py-2 rounded-lg bg-gradient-to-r from-green-500 text-white font-medium hover:scale-105 transition-transform"
             >
               View Projects
             </a>
             <a
               href="#contact"
-              className="px-5 py-2 rounded-lg bg-gradient-to-r from-green-500 to-red-450 text-white font-medium hover:scale-105 transition-transform"
+              className="px-5 py-2 rounded-lg bg-gradient-to-r from-green-500 text-white font-medium hover:scale-105 transition-transform"
             >
               Contact Me
             </a>
@@ -88,9 +84,7 @@ export default function Hero() {
             transition={{ delay: 0.25 }}
             className="mt-10 md:mt-0 w-full p-8 rounded-2xl bg-gradient-to-br from-gray-800/80 to-gray-900/80 shadow-md backdrop-blur-sm transition hover:shadow-lg"
           >
-            <div className="text-sm uppercase tracking-wide text-slate-400">
-              Quick Stats
-            </div>
+            <div className="text-sm uppercase tracking-wide text-slate-400">Quick Stats</div>
             <div className="mt-6 grid grid-cols-3 gap-6">
               <div className="text-center">
                 <div className="text-3xl font-semibold text-white">1+</div>
