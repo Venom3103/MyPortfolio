@@ -3,10 +3,9 @@
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 
-// Correctly typed motion components
-const MotionH1 = motion<HTMLHeadingElement>('h1')
-const MotionP = motion<HTMLParagraphElement>('p')
-const MotionDiv = motion<HTMLDivElement>('div')
+const MotionH1 = motion.h1
+const MotionP = motion.p
+const MotionDiv = motion.div
 
 export default function Hero() {
   return (
