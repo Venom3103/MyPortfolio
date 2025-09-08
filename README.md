@@ -42,4 +42,4 @@ Clean, maintainable codebase ready for expansion
 
 This portfolio is actively evolving — expect updates, optimizations, and more projects added soon.
 
-## Made with ❤️ & Excellence by Me.
+## Made with ❤️ & Excellence by Ayush.
