@@ -22,12 +22,13 @@ export default function About() {
     <span className="badge">React.js</span>
     <span className="badge">Next.js</span>
     <span className="badge">Node.js</span>
+    <span className="badge">JWT Auth</span>
     <span className="badge">Express.js</span>
     <span className="badge">MongoDB</span>
     <span className="badge">PostgreSQL</span>
     <span className="badge">Tailwind CSS</span>
     <span className="badge">Material UI</span>
-    <span className="badge">OpenAI API</span>
+    <span className="badge">Many More</span>
   </div>
 </section>
 
