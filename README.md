@@ -1,4 +1,4 @@
-# Ayush Kumar — Portfolio
+# Ayush — Portfolio
 
 A polished, modern developer portfolio built with **Next.js**, **Tailwind CSS**, **Framer Motion**, and an integrated **Command Palette**.  
 Showcases my work, skills, and projects with smooth animations, responsive design, and a delightful user experience.
