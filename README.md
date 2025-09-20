@@ -42,4 +42,4 @@ Clean, maintainable codebase ready for expansion
 
 This portfolio is actively evolving — expect updates, optimizations, and more projects will be added soon.
 
-## Made with ❤️
+## Made with ❤️ and efforts
