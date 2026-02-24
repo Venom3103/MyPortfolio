@@ -91,11 +91,11 @@ export default function Hero() {
             <div className="text-sm uppercase tracking-wide text-slate-400">Quick Stats</div>
             <div className="mt-6 grid grid-cols-3 gap-6">
               <div className="text-center">
-                <div className="text-3xl font-semibold text-white">1+</div>
-                <div className="text-xs text-slate-400">Years of Exp</div>
+                <div className="text-3xl font-semibold text-white">6+</div>
+                <div className="text-xs text-slate-400">Months of Exp</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-semibold text-white">5+</div>
+                <div className="text-3xl font-semibold text-white">3+</div>
                 <div className="text-xs text-slate-400">Projects</div>
               </div>
               <div className="text-center">
