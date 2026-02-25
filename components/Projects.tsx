@@ -5,7 +5,7 @@ const projects = [
   {
   title: 'AI Interview Proctoring System',
   desc: 'Real-time AI-powered proctoring system with face tracking, object detection, and automated misconduct flagging.',
-  url: 'https://my-assignment-tutedude.vercel.app',
+  url: 'https://interview-proctoring-app.vercel.app',
   tech: ['React', 'Node.js', 'TensorFlow.js', 'PostgreSQL', 'JWT', 'Vercel']
 },
     {
