@@ -3,17 +3,11 @@ import { motion } from 'framer-motion'
 
 const projects = [
   {
-    title: 'Expense Manager',
-    desc: 'Full-stack MERN app with JWT auth, categories & charts',
-    url: '#',
-    tech: ['React', 'Node.js', 'MongoDB', 'TailwindCSS']
-  },
-  {
-    title: 'AI Resume Analyzer',
-    desc: 'Analyze and score resumes using LLMs',
-    url: '#',
-    tech: ['Next.js', 'OpenAI', 'TypeScript']
-  },
+  title: 'AI Interview Proctoring System',
+  desc: 'Real-time AI-powered proctoring system with face tracking, object detection, and automated misconduct flagging.',
+  url: 'https://interview-proctoring-app.vercel.app',
+  tech: ['React', 'Node.js', 'TensorFlow.js', 'PostgreSQL', 'JWT', 'Vercel']
+},
     {
     title: 'Kuber AI Gold',
     desc: 'AI-powered gold investment planning and advisory platform',
@@ -21,11 +15,11 @@ const projects = [
     tech: ['Next.js', 'TypeScript', 'OpenAI API', 'Tailwind CSS']
   },
   {
-    title: 'EventHub',
-    desc: 'Event management dashboard with notifications',
-    url: '#',
-    tech: ['React', 'Node.js', 'Express', 'Material UI']
-  },
+  title: 'TradeX – Paper Trading Platform',
+  desc: 'Simulated trading platform with virtual wallet, real-time portfolio tracking, and secure JWT authentication.',
+  url: 'https://github.com/Venom3103/TradeX',
+  tech: ['Next.js', 'TypeScript', 'Prisma', 'PostgreSQL', 'Tailwind CSS', 'JWT']
+  }
 ]
 
 export default function Projects() {
